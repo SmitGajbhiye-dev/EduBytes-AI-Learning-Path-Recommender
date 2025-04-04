@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 bg-background dark:bg-darkBg dark:text-darkText min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-300 ease-in-out;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-indigo-600 focus:ring-2 focus:ring-indigo-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-emerald-600 focus:ring-2 focus:ring-emerald-300;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-orange-500 focus:ring-2 focus:ring-orange-300;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-darkBg/80 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden;
+  }
+  
+  .glass-card {
+    @apply bg-white/20 dark:bg-darkBg/30 backdrop-blur-md rounded-xl shadow-lg border border-white/10;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-darkBg/80 focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors duration-300;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "edubytes-new"
+  },
+  "targets": {
+    "edubytes-new": {
+      "hosting": {
+        "edubytes": [
+          "edubytes-new-2d48f"
+        ]
+      }
+    }
+  }
+} 
